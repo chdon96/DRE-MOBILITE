@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+.titre {
+  color: rgb(78, 78, 212);
+  font-family: 'Quicksand', sans-serif;
+    margin: 0;
+  }
+  .phrase{
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+  }
+  .form-container {
+    background-size: auto;
+    background-position: auto;
+  }

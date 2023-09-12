@@ -1,0 +1,39 @@
+<div class="card-row" style="height: 100%">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Nom et Prénom</th>
+        <th>Identifiant</th>
+        <th>Email</th>
+        <th>Sexe</th>
+        <th>Date de Naissance</th>
+        <th>Classe</th>
+        <th>Moyenne 3ème</th>
+        <th>Moyenne 2ème</th>
+        <th>Moyenne 1re</th>
+        <th>Niveau Français</th>
+        <th>Niveau Anglais</th>
+        <th>Option</th>
+        <th>Score</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let candidature of candidatures">
+        <td>{{ candidature.nomComplet }}</td>
+        <td>{{ candidature.identifiant }}</td>
+        <td>{{ candidature.email }}</td>
+        <td>{{ candidature.genre }}</td>
+        <td>{{ candidature.dateNaissance }}</td>
+        <td>{{ candidature.classe }}</td>
+        <td>{{ candidature.moy3 }}</td>
+        <td>{{ candidature.moy2 }}</td>
+        <td>{{ candidature.moy1 }}</td>
+        <td>{{ candidature.francais }}</td>
+        <td>{{ candidature.anglais }}</td>
+        <td>{{ candidature.option }}</td>
+        <td>{{ candidature.score }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  </div>

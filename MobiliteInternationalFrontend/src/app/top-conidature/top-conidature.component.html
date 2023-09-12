@@ -1,0 +1,76 @@
+<div *ngIf="loading; else dataContent">
+  <!-- Display a loading message or spinner while data is being fetched -->
+  <p>Loading...</p>
+</div>
+
+<ng-template #dataContent>
+  <div class="container">
+  <!-- Display the top candidature data if available -->
+  <table class="table">
+    <thead>
+
+  <tr>
+    <th scope="col">Nom et prénom</th>
+    <th scope="col">Identifiant</th>
+    <th scope="col">Email</th>
+    <th scope="col">Genre</th>
+    <th scope="col">Date de naissance</th>
+    <th scope="col">Classe</th>
+    <th scope="col">moy3</th>
+    <th scope="col">moy2</th>
+    <th scope="col">moy1</th>
+    <th scope="col">francais</th>
+    <th scope="col">anglais</th>
+    <th scope="col">option</th>
+    <th scope="col">score</th>
+    </tr>
+  </thead>
+  <tbody>
+
+  <tr *ngFor="let topCandidature of topCandidatures">
+<td>{{topCandidature.nomComplet}}</td>
+<td>{{topCandidature.identifiant}}</td>
+<td>{{topCandidature.email}}</td>
+<td>{{topCandidature.gerne}}</td>
+<td>{{topCandidature.dateNaissance}}</td>
+<td>{{topCandidature.classe}}</td>
+<td>{{topCandidature.moy3}}</td>
+<td>{{topCandidature.moy2}}</td>
+<td>{{topCandidature.moy1}}</td>
+<td>{{topCandidature.francais}}</td>
+<td>{{topCandidature.anglais}}</td>
+<td>{{topCandidature.option}}</td>
+<td>{{topCandidature.score}}</td>
+
+</tr>
+</tbody>
+
+</table>
+<!--   <mat-card>
+    <mat-card-content>
+
+      <div class="card-info">
+        <h2 class="card-content titre" style="color: black;">Nom et Prénom: {{topCandidature.nomComplet}}</h2>
+        <p class="card-content titre">Identifiant: {{topCandidature.identifiant}}</p>
+        <p class="card-content titre">Email: {{topCandidature.email}}</p>
+        <p class="card-content titre">Sexe : {{topCandidature.gerne}}</p>
+        <p class="card-content titre">Date de Naissance: {{topCandidature.dateNaissance}}</p>
+        <p class="card-content titre">classe: {{topCandidature.classe}}</p>
+        <p class="card-content titre">Moyenne 3éme : {{topCandidature.moy3}}</p>
+        <p class="card-content titre">Moyenne 2éme : {{topCandidature.moy2}}</p>
+        <p class="card-content titre">Moyenne 1re: {{topCandidature.moy1}}</p>
+        <p class="card-content titre">Niveau Francais: {{topCandidature.francais}}</p>
+        <p class="card-content titre">Niveau Anglais : {{topCandidature.anglais}}</p>
+        <p class="card-content titre">Option: {{topCandidature.option}}</p>
+        <p class="card-subtitle  thick titre">Score: {{topCandidature.score}}</p>
+    </div>
+    </mat-card-content>
+    <mat-card-actions class="card-actions"> -->
+        <!--button class="btn btn-primary" mat-raised-button color="primary" (click)="redirectToCandidatureForm(offre)">Apply</button-->
+<!-- Example button triggering the redirectToCandidatureForm function -->
+<!--
+    </mat-card-actions>
+  </mat-card> -->
+  <!-- Display an error message if an error occurred during data retrieval -->
+</div>
+</ng-template>
